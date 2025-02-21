@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yume Online Tutorial</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0;
+            background: url('https://media.istockphoto.com/id/1137578281/photo/fuji-mountain-and-cherry-blossoms-in-spring-japan.jpg?s=612x612&w=0&k=20&c=H4T0916_yYJTjeKAaaLmYoQY3OMmaFShks6RfpYYVf4=') no-repeat center center/cover;
+        }
+        .container { max-width: 800px; margin: auto; padding: 20px; background: rgba(255, 255, 255, 0.9); border-radius: 10px; }
+        .header { background: red; color: white; padding: 20px; font-size: 24px; border-radius: 10px 10px 0 0; }
+        .video-section { padding: 20px; }
+        .cta { background: #ffcc00; padding: 15px; font-size: 20px; display: inline-block; margin-top: 10px; text-decoration: none; color: black; border-radius: 5px; }
+        .cta:hover { background: #e6b800; }
+        .section { padding: 20px; border-bottom: 1px solid #ddd; }
+        .testimonials { background: #f9f9f9; padding: 20px; }
+        .footer { background: #333; color: white; padding: 15px; font-size: 14px; margin-top: 20px; border-radius: 0 0 10px 10px; }
+        .footer a { color: #ffcc00; text-decoration: none; margin: 0 10px; }
+        .form-container { background: #f4f4f4; padding: 20px; border-radius: 10px; margin-top: 20px; }
+        .form-container input, .form-container select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        .form-container button { background: green; color: white; padding: 15px; font-size: 18px; border: none; cursor: pointer; border-radius: 5px; }
+        .form-container button:hover { background: darkgreen; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">📢 Struggling to Learn Japanese? Let Me Help You Master It in Just One Session!</div>
+        
+        <div class="video-section">
+            <h2>Watch This First!</h2>
+            <iframe width="100%" height="315" src="https://drive.google.com/file/d/1EH1jqVkyTddQO1mBQnng_P4Ez4eVAhkz/preview" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            <a href="#booking" class="cta">Book Your Coaching Now</a>
+        </div>
+        
+        <div class="section" id="pricing">
+            <h2>What You’ll Get</h2>
+            <p>🔥 1-on-1 Japanese Coaching for ₱999! 🔥</p>
+            <ul>
+                <li>✔ Personalized study plan</li>
+                <li>✔ Live practice session</li>
+                <li>✔ Study materials & cheat sheets</li>
+            </ul>
+            <a href="#booking" class="cta">Secure Your Slot Now</a>
+        </div>
+        
+        <div class="testimonials">
+            <h2>What Students Say</h2>
+            <p>💬 “Super helpful! Now I understand Japanese better!” </p>
+            <p>💬 “I was confused before, but now I have a clear learning path!” </p>
+            <a href="#booking" class="cta">Join Now!</a>
+        </div>
+        
+        <div class="section" id="booking">
+            <h2>Book Now & Proceed to Payment</h2>
+            <div class="form-container">
+                <form action="payment.html" method="GET">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="schedule">Preferred Schedule:</label>
+                    <select id="schedule" name="schedule" required>
+                        <option value="">Select a date</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Friday">Friday</option>
+                    </select>
+                    
+                    <button type="submit">Proceed to Payment</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>GCash Payment Option</h2>
+            <p>After submitting the form, proceed with your payment via GCash.</p>
+            <a href="payment.html" class="cta">Pay via GCash</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        Copyright © 2025. All Rights Reserved. 
+        <a href="#">Privacy</a> | 
+        <a href="#">Terms and Conditions</a> | 
+        <a href="#">Contact Us</a>
+    </div>
+</body>
+</html>
